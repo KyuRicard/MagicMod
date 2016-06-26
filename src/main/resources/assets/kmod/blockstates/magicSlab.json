@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom": { "model": "magicHalfSlab" },
+        "half=top": { "model": "magicUpperSlab" }
+    }
+}

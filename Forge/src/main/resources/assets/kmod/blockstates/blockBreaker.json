@@ -1,0 +1,10 @@
+{
+	"variants": {
+        "facing=down":  { "model": "KMod:blockBreaker", "x": 180 },
+        "facing=up":    { "model": "KMod:blockBreaker" },
+        "facing=north": { "model": "KMod:blockBreaker" },
+        "facing=south": { "model": "KMod:blockBreaker", "y": 180 },
+        "facing=west":  { "model": "KMod:blockBreaker", "y": 270 },
+        "facing=east":  { "model": "KMod:blockBreaker", "y": 90 }
+    }
+}

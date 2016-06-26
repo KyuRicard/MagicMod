@@ -1,8 +1,0 @@
-tile.magicBlock.name=Magic Block
-tile.magicOre.name=Magic Ore
-tile.blockPlacer.name=Block Placer
-tile.blockBreaker.name=Block Breaker
-tile.repeatBlock.name=Repeat Block
-item.magicShard.name=Magic Shard
-itemGroup.KBlocks=Magic Blocks
-itemGroup.KItems=Magic Items

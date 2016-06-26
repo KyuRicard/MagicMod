@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable_vertical",
-    "textures": {
-        "top": "KMod:blocks/technic_block",
-        "front": "KMod:blocks/blockBreaker_front",
-        "side": "KMod:blocks/technic_block"
-    }
-}

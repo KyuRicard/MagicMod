@@ -1,0 +1,16 @@
+[
+{
+  "modid": "KMod",
+  "name": "KyuRicard Mod",
+  "description": "This mod allows you to do amazing things...",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["KyuRicard"],
+  "credits": "Forge for the API and Mojang for Minecraft",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

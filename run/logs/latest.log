@@ -1,0 +1,96 @@
+[20:51:03] [Client thread/INFO]: Setting user: Player885
+[20:51:10] [Client thread/INFO]: LWJGL Version: 2.9.4
+[20:51:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:KyuRicard Mod
+[20:51:20] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:51:20] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[20:51:20] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:51:20] [Thread-8/INFO]: OpenAL initialized.
+[20:51:20] [Sound Library Loader/INFO]: Sound engine started
+[20:51:26] [Client thread/INFO]: Created: 16x16 textures-atlas
+[20:51:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:KyuRicard Mod
+[20:51:32] [Client thread/INFO]: SoundSystem shutting down...
+[20:51:32] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[20:51:32] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:51:32] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[20:51:32] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:51:33] [Thread-10/INFO]: OpenAL initialized.
+[20:51:33] [Sound Library Loader/INFO]: Sound engine started
+[20:51:37] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[20:51:40] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[20:51:50] [Server thread/INFO]: Starting integrated minecraft server version 1.9
+[20:51:50] [Server thread/INFO]: Generating keypair
+[20:51:50] [Server thread/INFO]: Preparing start region for level 0
+[20:51:51] [Server thread/INFO]: Changing view distance to 12, from 10
+[20:51:52] [Server thread/INFO]: Player885[local:E:f131d423] logged in with entity id 6 at (-3.703740603403842, 4.0, -2.330461752686136)
+[20:51:52] [Server thread/INFO]: Player885 joined the game
+[20:51:54] [Server thread/INFO]: Saving and pausing game...
+[20:51:54] [Server thread/INFO]: Saving chunks for level 'Modding'/Overworld
+[20:51:54] [Server thread/INFO]: Saving chunks for level 'Modding'/Nether
+[20:51:54] [Server thread/INFO]: Saving chunks for level 'Modding'/The End
+[20:51:54] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@25621abf[id=b82821b3-8726-3f56-a046-79edba0ca58e,name=Player885,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:59) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:56) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:165) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3038) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:130) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_91]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_91]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_91]
+[20:52:04] [Server thread/INFO]: Player885 has just earned the achievement [Taking Inventory]
+[20:52:04] [Client thread/INFO]: [CHAT] Player885 has just earned the achievement [Taking Inventory]
+[20:52:36] [Client thread/INFO]: [CHAT] /setblock, /setworldspawn
+[20:52:39] [Client thread/INFO]: [CHAT] minecraft:fire, minecraft:daylight_detector, minecraft:stone_pressure_plate, minecraft:jungle_door, minecraft:piston_extension, minecraft:gravel, minecraft:acacia_door, minecraft:cobblestone, minecraft:ender_chest, minecraft:nether_brick, minecraft:snow_layer, minecraft:end_bricks, minecraft:lit_pumpkin, minecraft:barrier, minecraft:carrots, minecraft:tnt, minecraft:sand, minecraft:spruce_fence_gate, minecraft:jungle_fence, minecraft:wooden_pressure_plate, minecraft:snow, minecraft:standing_sign, minecraft:birch_fence_gate, minecraft:cocoa, minecraft:structure_block, minecraft:detector_rail, kmod:repeatBlock, minecraft:hardened_clay, minecraft:stone_slab2, minecraft:netherrack, minecraft:double_stone_slab, minecraft:cobblestone_wall, minecraft:stained_glass, minecraft:stone_button, minecraft:brown_mushroom, minecraft:stone_slab, minecraft:stained_glass_pane, minecraft:clay, minecraft:activator_rail, minecraft:redstone_torch, minecraft:redstone_wire, minecraft:quartz_block, minecraft:redstone_lamp, minecraft:brown_mushroom_block, minecraft:sandstone_stairs, minecraft:lava, minecraft:red_sandstone, minecraft:beacon, minecraft:tallgrass, minecraft:grass, minecraft:glowstone, minecraft:deadbush, minecraft:ice, minecraft:brick_stairs, minecraft:red_mushroom_block, minecraft:brick_block, minecraft:unlit_redstone_torch, minecraft:golden_rail, minecraft:dispenser, minecraft:anvil, minecraft:acacia_fence, minecraft:jukebox, minecraft:flower_pot, minecraft:emerald_block, minecraft:spruce_fence, minecraft:red_flower, minecraft:birch_door, minecraft:piston_head, minecraft:stone, minecraft:soul_sand, minecraft:acacia_stairs, minecraft:glass_pane, minecraft:mycelium, minecraft:bookshelf, minecraft:obsidian, minecraft:standing_banner, minecraft:portal, minecraft:light_weighted_pressure_plate, minecraft:coal_block, minecraft:iron_door, minecraft:gold_block, minecraft:end_gateway, minecraft:double_stone_slab2, minecraft:stained_hardened_clay, minecraft:monster_egg, minecraft:purpur_slab, minecraft:mob_spawner, minecraft:wooden_slab, minecraft:bedrock, minecraft:iron_ore, minecraft:dark_oak_fence_gate, minecraft:unpowered_comparator, minecraft:end_portal, minecraft:stone_brick_stairs, minecraft:redstone_block, minecraft:wooden_door, minecraft:oak_stairs, minecraft:wall_sign, minecraft:yellow_flower, minecraft:heavy_weighted_pressure_plate, minecraft:water, minecraft:fence_gate, minecraft:gold_ore, minecraft:flowing_water, minecraft:brewing_stand, minecraft:potatoes, minecraft:mossy_cobblestone, minecraft:sticky_piston, minecraft:rail, minecraft:hay_block, minecraft:nether_brick_stairs, minecraft:hopper, minecraft:torch, minecraft:leaves2, minecraft:end_portal_frame, minecraft:trapdoor, minecraft:red_sandstone_stairs, minecraft:lit_furnace, minecraft:farmland, minecraft:leaves, minecraft:sea_lantern, minecraft:slime, minecraft:melon_stem, minecraft:beetroots, minecraft:carpet, minecraft:enchanting_table, kmod:blockPlacer, minecraft:skull, minecraft:dirt, minecraft:dropper, kmod:blockBreaker, minecraft:emerald_ore, minecraft:planks, minecraft:trapped_chest, minecraft:double_wooden_slab, minecraft:lit_redstone_lamp, minecraft:nether_wart, kmod:magicBlock, minecraft:chain_command_block, minecraft:dark_oak_door, kmod:magicOre, minecraft:purpur_double_slab, minecraft:sponge, minecraft:frosted_ice, minecraft:pumpkin_stem, minecraft:dark_oak_stairs, minecraft:crafting_table, minecraft:nether_brick_fence, minecraft:prismarine, minecraft:birch_stairs, minecraft:wall_banner, minecraft:sandstone, minecraft:dragon_egg, minecraft:cauldron, minecraft:cake, minecraft:iron_bars, minecraft:ladder, minecraft:powered_repeater, minecraft:lapis_block, minecraft:purpur_block, minecraft:flowing_lava, minecraft:noteblock, minecraft:cactus, minecraft:wool, minecraft:spruce_door, minecraft:command_block, minecraft:end_stone, minecraft:tripwire, minecraft:sapling, minecraft:bed, minecraft:purpur_pillar, minecraft:packed_ice, minecraft:log, minecraft:lapis_ore, minecraft:repeating_command_block, minecraft:log2, minecraft:powered_comparator, minecraft:grass_path, minecraft:iron_trapdoor, minecraft:quartz_stairs, minecraft:stonebrick, minecraft:lit_redstone_ore, minecraft:chest, minecraft:red_mushroom, minecraft:birch_fence, kmod:magicSlab, minecraft:diamond_block, minecraft:chorus_plant, minecraft:wheat, minecraft:iron_block, minecraft:air, minecraft:end_rod, minecraft:unpowered_repeater, minecraft:jungle_stairs, minecraft:melon_block, minecraft:diamond_ore, minecraft:wooden_button, minecraft:lever, minecraft:reeds, minecraft:redstone_ore, minecraft:jungle_fence_gate, minecraft:acacia_fence_gate, minecraft:stone_stairs, minecraft:coal_ore, minecraft:spruce_stairs, minecraft:waterlily, minecraft:piston, minecraft:quartz_ore, minecraft:double_plant, minecraft:pumpkin, minecraft:vine, minecraft:purpur_stairs, minecraft:glass, minecraft:chorus_flower, minecraft:fence, minecraft:dark_oak_fence, minecraft:daylight_detector_inverted, minecraft:tripwire_hook, minecraft:furnace, minecraft:web
+[20:52:41] [Client thread/INFO]: [CHAT] kmod:repeatBlock, kmod:blockPlacer, kmod:blockBreaker, kmod:magicBlock, kmod:magicOre, kmod:magicSlab
+[20:52:42] [Client thread/INFO]: [CHAT] kmod:repeatBlock, kmod:blockPlacer, kmod:blockBreaker, kmod:magicBlock, kmod:magicOre, kmod:magicSlab
+[20:52:42] [Client thread/INFO]: [CHAT] kmod:repeatBlock, kmod:blockPlacer, kmod:blockBreaker, kmod:magicBlock, kmod:magicOre, kmod:magicSlab
+[20:52:42] [Client thread/INFO]: [CHAT] kmod:repeatBlock, kmod:blockPlacer, kmod:blockBreaker, kmod:magicBlock, kmod:magicOre, kmod:magicSlab
+[20:52:43] [Client thread/INFO]: [CHAT] kmod:repeatBlock, kmod:blockPlacer, kmod:blockBreaker, kmod:magicBlock, kmod:magicOre, kmod:magicSlab
+[20:52:43] [Client thread/INFO]: [CHAT] kmod:repeatBlock, kmod:blockPlacer, kmod:blockBreaker, kmod:magicBlock, kmod:magicOre, kmod:magicSlab
+[20:52:44] [Client thread/INFO]: [CHAT] kmod:repeatBlock, kmod:blockPlacer, kmod:blockBreaker, kmod:magicBlock, kmod:magicOre, kmod:magicSlab
+[20:52:47] [Client thread/INFO]: [CHAT] kmod:magicBlock, kmod:magicOre, kmod:magicSlab
+[20:52:48] [Client thread/INFO]: [CHAT] kmod:magicBlock, kmod:magicOre, kmod:magicSlab
+[20:52:48] [Client thread/INFO]: [CHAT] kmod:magicBlock, kmod:magicOre, kmod:magicSlab
+[20:52:49] [Client thread/INFO]: [CHAT] The block couldn't be placed
+[20:52:51] [Client thread/INFO]: [CHAT] The block couldn't be placed
+[20:52:54] [Server thread/INFO]: [Player885: Block placed]
+[20:52:54] [Client thread/INFO]: [CHAT] Block placed
+[20:52:55] [Server thread/INFO]: Saving and pausing game...
+[20:52:55] [Server thread/INFO]: Saving chunks for level 'Modding'/Overworld
+[20:52:55] [Server thread/INFO]: Saving chunks for level 'Modding'/Nether
+[20:52:55] [Server thread/INFO]: Saving chunks for level 'Modding'/The End
+[20:52:57] [Client thread/INFO]: [CHAT] The block couldn't be placed
+[20:52:59] [Server thread/INFO]: [Player885: Block placed]
+[20:52:59] [Client thread/INFO]: [CHAT] Block placed
+[20:53:02] [Client thread/INFO]: [CHAT] There is no such block with name kmod:magicSlab:1
+[20:53:05] [Client thread/INFO]: [CHAT] The block couldn't be placed
+[20:53:06] [Server thread/INFO]: [Player885: Block placed]
+[20:53:06] [Client thread/INFO]: [CHAT] Block placed
+[20:53:12] [Client thread/INFO]: [CHAT] Usage: /setblock <x> <y> <z> <TileName> [dataValue] [oldBlockHandling] [dataTag]
+[20:53:29] [Server thread/INFO]: [Player885: Block placed]
+[20:53:29] [Client thread/INFO]: [CHAT] Block placed
+[20:54:59] [Server thread/INFO]: Saving and pausing game...
+[20:54:59] [Server thread/INFO]: Saving chunks for level 'Modding'/Overworld
+[20:54:59] [Server thread/INFO]: Saving chunks for level 'Modding'/Nether
+[20:54:59] [Server thread/INFO]: Saving chunks for level 'Modding'/The End
+[20:55:00] [Server thread/INFO]: Stopping server
+[20:55:00] [Server thread/INFO]: Saving players
+[20:55:00] [Server thread/INFO]: Saving worlds
+[20:55:00] [Server thread/INFO]: Saving chunks for level 'Modding'/Overworld
+[20:55:00] [Server thread/INFO]: Saving chunks for level 'Modding'/Nether
+[20:55:00] [Server thread/INFO]: Saving chunks for level 'Modding'/The End
+[20:55:00] [Client thread/INFO]: Stopping!
+[20:55:00] [Client thread/INFO]: SoundSystem shutting down...
+[20:55:01] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

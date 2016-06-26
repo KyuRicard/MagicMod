@@ -1,0 +1,76 @@
+---- Minecraft Crash Report ----
+// I blame Dinnerbone.
+
+Time: 7/06/16 14:41
+Description: Exception while ticking a block
+
+java.lang.NullPointerException: Exception while ticking a block
+	at com.kyuricard.blocks.BlockPlacer.dispense(BlockPlacer.java:80)
+	at net.minecraft.block.BlockDispenser.updateTick(BlockDispenser.java:181)
+	at net.minecraft.world.WorldServer.tickUpdates(WorldServer.java:767)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:222)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:768)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:683)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:155)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:532)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.kyuricard.blocks.BlockPlacer.dispense(BlockPlacer.java:80)
+	at net.minecraft.block.BlockDispenser.updateTick(BlockDispenser.java:181)
+
+-- Block being ticked --
+Details:
+	Block: kmod:blockPlacer[facing=up,triggered=false]
+	Block location: World: (20,4,22), Chunk: (at 4,0,6 in 1,1; contains blocks 16,0,16 to 31,255,31), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+Stacktrace:
+	at net.minecraft.world.WorldServer.tickUpdates(WorldServer.java:767)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:222)
+
+-- Affected level --
+Details:
+	Level name: Test
+	All players: 1 total; [EntityPlayerMP['Player30'/1, l='Test', x=22,09, y=4,00, z=21,19]]
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: 7989903327943149737
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 3;minecraft:air;127;decoration
+	Level spawn location: World: (8,4,8), Chunk: (at 8,0,8 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 49121 game time, 49121 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 118523 (now: false), thunder time: 107997 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:768)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:683)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:155)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:532)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_91, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 348199568 bytes (332 MB) / 996671488 bytes (950 MB) up to 1883242496 bytes (1796 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.23 Powered by Forge 12.16.1.1887 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.9-12.16.1.1887.jar) 
+	UCHIJAAAA	Forge{12.16.1.1887} [Minecraft Forge] (forgeSrc-1.9-12.16.1.1887.jar) 
+	UCHIJAAAA	KMod{1.0 Alpha} [KyuRicard Mod] (bin) 
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player30'/1, l='Test', x=22,09, y=4,00, z=21,19]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

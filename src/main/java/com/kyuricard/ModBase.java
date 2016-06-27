@@ -3,8 +3,13 @@ package com.kyuricard;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.kyuricard.blocks.KBlocks;
-import com.kyuricard.items.KItems;
+import com.kyuricard.blocks.BlockBreaker;
+import com.kyuricard.blocks.BlockPlacer;
+import com.kyuricard.blocks.MagicBlock;
+import com.kyuricard.blocks.MagicOre;
+import com.kyuricard.blocks.RepeatBlock;
+import com.kyuricard.items.GoldenCoin;
+import com.kyuricard.items.MagicShard;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -12,6 +17,7 @@ import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -38,27 +44,28 @@ public class ModBase {
 	public static CreativeTabs blocksTab = new CreativeTabs("KBlocks") {		
 		@Override
 		public Item getTabIconItem() {			
-			return Item.getItemFromBlock(KBlocks.magicBlock);
+			return Item.getItemFromBlock(GetBlock("magicBlock"));
 		}
 	};
 	
 	public static CreativeTabs itemsTab = new CreativeTabs("KItems") {
 		@Override
 		public Item getTabIconItem() {
-			return KItems.magicShard;
+			return GetItem("magicShard");
 		}
 	};
 	
 	@EventHandler
 	public void PreInit(FMLPreInitializationEvent event)
 	{
-		blocks.add(KBlocks.magicOre);
-		blocks.add(KBlocks.magicBlock);
-		blocks.add(KBlocks.blockPlacer);
-		blocks.add(KBlocks.blockBreaker);
-		blocks.add(KBlocks.repeatBlock);
+		blocks.add(new MagicOre());
+		blocks.add(new MagicBlock());
+		blocks.add(new BlockPlacer());
+		blocks.add(new BlockBreaker());
+		blocks.add(new RepeatBlock());
 		
-		items.add(KItems.magicShard);
+		items.add(new MagicShard());
+		items.add(new GoldenCoin());
 		
 		for (Block b : blocks)
 		{
@@ -106,5 +113,57 @@ public class ModBase {
 		{
 			r.registerRecipes();
 		}
+	}
+	
+	public static ItemStack GetISFromBlock(String name)
+	{
+		for (Block b : blocks)
+		{
+			KRecipable kr = (KRecipable)b;
+			if (kr.getName().equals(name))
+			{
+				return kr.GetIS();
+			}
+		}
+		return null;
+	}
+	
+	public static ItemStack GetISFromItem(String name)
+	{
+		for (Item i : items)
+		{
+			KRecipable kr = (KRecipable)i;
+			if (kr.getName().equals(name))
+			{
+				return kr.GetIS();
+			}
+		}
+		return null;
+	}
+	
+	public static Block GetBlock(String name)
+	{
+		for (Block b : blocks)
+		{
+			KRecipable kr = (KRecipable)b;
+			if (kr.getName().equals(name))
+			{
+				return b;
+			}
+		}
+		return null;
+	}
+	
+	public static Item GetItem(String name)
+	{
+		for (Item i : items)
+		{
+			KRecipable kr = (KRecipable)i;
+			if (kr.getName().equals(name))
+			{
+				return i;
+			}
+		}
+		return null;
 	}
 }

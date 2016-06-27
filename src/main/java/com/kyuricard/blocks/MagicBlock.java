@@ -2,7 +2,6 @@ package com.kyuricard.blocks;
 
 import com.kyuricard.KRecipable;
 import com.kyuricard.ModBase;
-import com.kyuricard.items.KItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -27,7 +26,7 @@ public class MagicBlock extends Block implements KRecipable {
 	
 	@Override
 	public void registerRecipes() {
-		GameRegistry.addRecipe(new ItemStack(this), "SS", "SS", 'S', new ItemStack(KItems.magicShard));		
+		GameRegistry.addRecipe(new ItemStack(this), "SS", "SS", 'S', ModBase.GetISFromItem("magicShard"));		
 	}
 
 	@Override
@@ -38,6 +37,11 @@ public class MagicBlock extends Block implements KRecipable {
 	@Override
 	public void registerTextures() {
 		ModBase.rend.register(Item.getItemFromBlock(this), 0, new ModelResourceLocation(ModBase.ModID + ":" + getUnlocalizedName().substring(5), "inventory"));		
+	}
+
+	@Override
+	public ItemStack GetIS() {
+		return new ItemStack(this);
 	}
 
 }

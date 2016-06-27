@@ -2,7 +2,6 @@ package com.kyuricard.blocks;
 
 import com.kyuricard.KRecipable;
 import com.kyuricard.ModBase;
-import com.kyuricard.items.KItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDispenser;
@@ -23,7 +22,6 @@ public class BlockPlacer extends BlockDispenser implements KRecipable {
 	public static final String name = "blockPlacer";
 	public BlockPlacer()
 	{
-		super();
 		setCreativeTab(ModBase.blocksTab);
 		setRegistryName(name);
 		setUnlocalizedName(name);
@@ -100,7 +98,7 @@ public class BlockPlacer extends BlockDispenser implements KRecipable {
 	
 	@Override
 	public void registerRecipes() {
-		GameRegistry.addRecipe(new ItemStack(this), "SSS", "SRS", "SBS", 'S', KItems.magicShard, 'R', Items.redstone, 'B', Items.bow);		
+		GameRegistry.addRecipe(new ItemStack(this), "SSS", "SRS", "SBS", 'S', ModBase.GetISFromItem("magicShard"), 'R', Items.redstone, 'B', Items.bow);		
 	}
 
 	@Override
@@ -114,6 +112,11 @@ public class BlockPlacer extends BlockDispenser implements KRecipable {
 		{
 			ModBase.rend.register(Item.getItemFromBlock(this), i, new ModelResourceLocation(ModBase.ModID + ":" + getUnlocalizedName().substring(5), "inventory"));
 		}
+	}
+
+	@Override
+	public ItemStack GetIS() {
+		return new ItemStack(this);
 	}
 
 	

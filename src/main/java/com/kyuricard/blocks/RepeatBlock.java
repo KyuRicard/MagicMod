@@ -2,7 +2,6 @@ package com.kyuricard.blocks;
 
 import com.kyuricard.KRecipable;
 import com.kyuricard.ModBase;
-import com.kyuricard.items.KItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -47,7 +46,7 @@ public class RepeatBlock extends Block implements KRecipable {
 	
 	@Override
 	public void registerRecipes() {
-		GameRegistry.addRecipe(new ItemStack(this), "SSS", "SRS", "SSS", 'S', new ItemStack(KItems.magicShard), 'R', new ItemStack(Blocks.redstone_block));
+		GameRegistry.addRecipe(new ItemStack(this), "SSS", "SRS", "SSS", 'S', ModBase.GetISFromItem("magicShard"), 'R', new ItemStack(Blocks.redstone_block));
 	}
 
 	@Override
@@ -71,5 +70,10 @@ public class RepeatBlock extends Block implements KRecipable {
 		{
 			powerState = false;
 		}
+	}
+
+	@Override
+	public ItemStack GetIS() {
+		return new ItemStack(this);
 	}
 }

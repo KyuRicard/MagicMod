@@ -4,7 +4,6 @@ import java.util.Random;
 
 import com.kyuricard.KRecipable;
 import com.kyuricard.ModBase;
-import com.kyuricard.items.KItems;
 
 import net.minecraft.block.BlockOre;
 import net.minecraft.block.state.IBlockState;
@@ -27,7 +26,7 @@ public class MagicOre extends BlockOre implements KRecipable {
 	
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return KItems.magicShard;
+		return ModBase.GetItem("magicShard");
 	}
 	
 	@Override
@@ -37,7 +36,7 @@ public class MagicOre extends BlockOre implements KRecipable {
 
 	@Override
 	public void registerRecipes() {	
-		GameRegistry.addSmelting(this, new ItemStack(KItems.magicShard), 25);
+		GameRegistry.addSmelting(this, ModBase.GetISFromItem("magicShard"), 25);
 	}
 
 	@Override
@@ -48,5 +47,10 @@ public class MagicOre extends BlockOre implements KRecipable {
 	@Override
 	public void registerTextures() {
 		ModBase.rend.register(Item.getItemFromBlock(this), 0, new ModelResourceLocation(ModBase.ModID + ":" + getUnlocalizedName().substring(5), "inventory"));
+	}
+
+	@Override
+	public ItemStack GetIS() {
+		return new ItemStack(this);
 	}
 }

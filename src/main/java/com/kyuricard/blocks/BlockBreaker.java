@@ -2,7 +2,6 @@ package com.kyuricard.blocks;
 
 import com.kyuricard.KRecipable;
 import com.kyuricard.ModBase;
-import com.kyuricard.items.KItems;
 
 import net.minecraft.block.BlockDispenser;
 import net.minecraft.block.state.IBlockState;
@@ -64,7 +63,7 @@ public class BlockBreaker extends BlockDispenser implements KRecipable {
 
 	@Override
 	public void registerRecipes() {
-		GameRegistry.addRecipe(new ItemStack(this), "SSS", "SRS", "SBS", 'S', KItems.magicShard, 'R', Items.redstone,
+		GameRegistry.addRecipe(new ItemStack(this), "SSS", "SRS", "SBS", 'S', ModBase.GetISFromItem("magicShard"), 'R', Items.redstone,
 				'B', Items.iron_pickaxe);
 	}
 
@@ -79,5 +78,10 @@ public class BlockBreaker extends BlockDispenser implements KRecipable {
 		{
 			ModBase.rend.register(Item.getItemFromBlock(this), i, new ModelResourceLocation(ModBase.ModID + ":" + getUnlocalizedName().substring(5), "inventory"));
 		}
+	}
+
+	@Override
+	public ItemStack GetIS() {
+		return new ItemStack(this);
 	}
 }
